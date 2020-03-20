@@ -3,7 +3,7 @@ $(document).ready(function(){
     getInfoByMa(mavn);
 });
 function getInfoByMa(ma){
-var url = 'https://ncov.moh.gov.vn/web/guest/trang-chu?p_p_id=congbothongke_WAR_coronadvcportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=getItemByMa&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=6';
+var url = 'http://ncov.moh.gov.vn/web/guest/trang-chu?p_p_id=congbothongke_WAR_coronadvcportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_resource_id=getItemByMa&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_count=6';
 return $.ajax({
 url: url,
 type: 'POST',
