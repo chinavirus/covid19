@@ -7,6 +7,19 @@ var url = 'https://cors-anywhere.herokuapp.com/https://ncov.moh.gov.vn/web/guest
 return $.ajax({
 url: url,
 type: 'POST',
+headers: {
+        'accept': '*/*',
+        'accept-encoding': 'gzip, deflate, br',
+        'accept-language': 'vi,vi-VN;q=0.9,en-US;q=0.8,en;q=0.7,fr;q=0.6,fr-FR;q=0.5',
+        'content-length': '3960',
+        'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36',
+        'origin': 'https://ncov.moh.gov.vn',
+        'referer': 'https://ncov.moh.gov.vn/',
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'same-origin',
+},
 datatype: 'json',
 data: {
     _congbothongke_WAR_coronadvcportlet_ma : ma,
